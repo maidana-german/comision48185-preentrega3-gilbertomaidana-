@@ -1,0 +1,25 @@
+{
+  "name": "preentrega3-gilbertomaidana",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm German</h1> <h3 align=\"center\">A new passionate frontend developer from Argentina</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maidana-german/comision48185-preentrega3-gilbertomaidana-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maidana-german/comision48185-preentrega3-gilbertomaidana-/issues"
+  },
+  "homepage": "https://github.com/maidana-german/comision48185-preentrega3-gilbertomaidana-#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

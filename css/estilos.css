@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.hero div h2, .fixed, .contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/*------------Header------------*/
+header {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header h1 {
+    color: azure;
+    font-size: 120px;
+    font-family: 'Qwitcher Grypen', cursive; }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    header nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 5px;
+      transition: 1s; }
+      header nav ul li a:hover {
+        color: yellow;
+        font-size: large; }
+
+/*------------INDEX------------*/
+/*------------Main------------*/
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../img/foto_main_1280.jpg");
+  width: 100%;
+  height: calc(100vh - 164px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero div h2 {
+    color: white;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.164);
+    text-align: center; }
+
+.productos h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: black; }
+
+.productos div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: black; }
+  .productos div div {
+    text-align: center;
+    border: 2px solid brown;
+    width: 250px;
+    height: 350px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: 1s; }
+    .productos div div:hover {
+      transform: scale(1.2); }
+    .productos div div img {
+      width: 246px;
+      height: 250px; }
+    .productos div div p {
+      margin-bottom: 15px; }
+    .productos div div a {
+      text-decoration: none;
+      background-color: brown;
+      color: white;
+      padding: 3px 5px 3px 5px; }
+
+.nuestrosClientes {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 15px; }
+  .nuestrosClientes h3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 30px; }
+    .nuestrosClientes h3 .grid-nuestrosClientes .img-1 {
+      grid-column: span 2; }
+      .nuestrosClientes h3 .grid-nuestrosClientes .img-1 img {
+        width: 100%;
+        height: 100%; }
+    .nuestrosClientes h3 .grid-nuestrosClientes .img-4 img {
+      grid-row: span 2; }
+    .nuestrosClientes h3 .grid-nuestrosClientes .img-8 {
+      grid-column: span 3; }
+
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .ubicacion h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 30px; }
+
+.fixed {
+  position: fixed;
+  right: 5%;
+  bottom: 15%;
+  width: 100px;
+  height: 100px;
+  background-color: #25D366;
+  text-align: center;
+  border-radius: 100%; }
+  .fixed div a {
+    color: white;
+    background-color: #25D366; }
+
+/*------------Page Productos------------*/
+.grid-productos {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 0 auto;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 100px 100px 50px 100px 100px 50px 100px 100px;
+  grid-template-areas: "i1 i1 tt1 tt1 tt1" "i1 i1 tx1 tx1 tx1" "i1 i1 tx1 tx1 tx1" "i2 i2 tt2 tt2 tt2" "i2 i2 tx2 tx2 tx2" "i2 i2 tx2 tx2 tx2" "i3 i3 tt3 tt3 tt3" "i3 i3 tx3 tx3 tx3" "i3 i3 tx3 tx3 tx3";
+  gap: 10px; }
+  .grid-productos .productoImg1 {
+    grid-area: i1; }
+    .grid-productos .productoImg1 img {
+      width: 100%;
+      height: 100%; }
+  .grid-productos .productoTitulo1 {
+    grid-area: tt1; }
+  .grid-productos .productoTexto1 {
+    grid-area: tx1; }
+  .grid-productos .productoImg2 {
+    grid-area: i2; }
+    .grid-productos .productoImg2 img {
+      width: 100%;
+      height: 100%; }
+  .grid-productos .productoTitulo2 {
+    grid-area: tt2; }
+  .grid-productos .productoTexto2 {
+    grid-area: tx2; }
+  .grid-productos .productoImg3 {
+    grid-area: i3; }
+    .grid-productos .productoImg3 img {
+      width: 100%;
+      height: 100%; }
+  .grid-productos .productoTitulo3 {
+    grid-area: tt3; }
+  .grid-productos .productoTexto3 {
+    grid-area: tx3; }
+
+/*------------Page Servicios------------*/
+.servicios {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px; }
+  .servicios article {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 300px;
+    justify-content: space-evenly;
+    align-items: center; }
+    .servicios article h3 {
+      font-size: 25px; }
+    .servicios article p {
+      font-size: 20px;
+      line-height: 30px; }
+
+/*------------Page Acerca de------------*/
+.nosotros {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .nosotros article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1000px;
+    height: 300px; }
+    .nosotros article h3 {
+      font-size: 30px; }
+    .nosotros article p {
+      font-size: 20px;
+      line-height: 30px; }
+
+/*------------Page Contacto------------*/
+.contacto {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 1000px;
+  height: 300px; }
+  .contacto div h3 {
+    font-size: 30px; }
+  .contacto div p {
+    font-size: 20px;
+    line-height: 20px; }
+
+/*------------Footer------------*/
+footer pieDePagina {
+  padding: 20px; }
+  footer pieDePagina redesSociales h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 20px; }
+  footer pieDePagina redesSociales a img {
+    width: 30px;
+    height: 30px; }
+  footer pieDePagina h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 20px; }
+  footer pieDePagina p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 15px; }
+
+/*------------Media Queries------------*/
+@media screen and (max-width: 900px) {
+  .nav2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  .grid-nuestrosClientes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px; }
+  .grid-cliente {
+    grid-column: span 1;
+    grid-row: span 1; }
+  .grid-productos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 100px 100px 50px 100px 100px 50px 100px 100px;
+    grid-template-areas: "i1 tt1 tt1" "i1 tx1 tx1" "i1 tx1 tx1" "i2 tt2 tt2" "i2 tx2 tx2" "i2 tx2 tx2" "i3 tt3 tt3" "i3 tx3 tx3" "i3 tx3 tx3"; } }
+
+@media screen and (max-width: 800px) {
+  .nav1 {
+    flex-direction: column; }
+  .nav1 h1 {
+    font-size: 80px; }
+  .grid-nuestrosClientes {
+    grid-template-columns: 1fr; }
+  .grid-cliente {
+    grid-column: span 1;
+    grid-row: span 1; }
+  .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 30px auto 150px 30px auto 150px 30px auto;
+    grid-template-areas: "i1 ." "tt1 tt1" "tx1 tx1" "i2 ." "tt2 ." "tx2 tx2" "i3 ." "tt3 ." "tx3 tx3"; }
+  .nosotros article {
+    width: auto;
+    height: auto;
+    padding: 20px; } }
+
+@media screen and (max-width: 400px) {
+  .nav1 h1 {
+    font-size: 60px; }
+  .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 30px auto 150px 30px auto 150px 30px auto;
+    grid-template-areas: "i1 ." "tt1 tt1" "tx1 tx1" "i2 ." "tt2 ." "tx2 tx2" "i3 ." "tt3 ." "tx3 tx3"; }
+  .nosotros article {
+    width: auto;
+    height: auto;
+    padding: 20px; } }

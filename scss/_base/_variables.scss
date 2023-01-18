@@ -1,0 +1,26 @@
+$color-principal: black;
+$color-secundario: white;
+$color-terciario: brown;
+
+$font-size:
+15px,
+20px,
+25px,
+30px,
+40px,
+50px,
+60px,
+80px,
+120px;
+
+$boton:(
+    deco: none,
+    bg-color: $color-terciario,
+    tx-color: white,
+);
+
+%flex {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

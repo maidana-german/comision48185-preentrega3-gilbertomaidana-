@@ -1,0 +1,33 @@
+/*------------Footer------------*/
+
+footer{
+    pieDePagina{
+        padding: 20px;
+        redesSociales{
+            h3{
+                margin-top: 30px;
+                margin-bottom: 20px;
+                color: $color-principal;
+                font-size: nth($font-size, 2);
+            }
+            a{
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        h3{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: $color-principal;
+            font-size: nth($font-size, 2);
+        }
+        p{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: $color-principal;
+            font-size: nth($font-size, 1);
+        }    
+    }
+}

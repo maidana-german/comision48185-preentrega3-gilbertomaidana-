@@ -1,0 +1,265 @@
+/*------------INDEX------------*/
+
+/*------------Main------------*/
+
+.hero{
+    background: linear-gradient( rgba(0, 0, 0, 0.100), rgba(0, 0, 0, 0.700)), url("../img/foto_main_1280.jpg");
+    width: 100%;
+    height: calc(100vh - 164px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        h2{
+            color: white;
+            font-size: nth($font-size, 5);
+            background-color: rgba(0, 0, 0, 0.164);
+            text-align: center;
+            @extend %flex;
+        }
+    }
+}
+
+.productos{
+    h2{
+        display: flex;
+        justify-content: center;
+        font-size: nth($font-size, 6);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: black;
+    }
+    div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        color: $color-principal;        
+        div{
+            text-align: center;
+            border: 2px solid $color-terciario;
+            width: 250px;
+            height: 350px;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            transition: 1s;
+            &:hover{
+                transform: scale(1.2);               
+            }
+            img{
+                width: 246px;
+                height: 250px;
+            }
+            p{
+                margin-bottom: 15px;
+            }
+            a{
+                text-decoration: map-get($boton, deco );
+                background-color: map-get($boton, bg-color );
+                color: map-get($boton, tx-color );
+                padding: 3px 5px 3px 5px;
+            }
+        }
+    }
+}
+
+.nuestrosClientes{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 15px;
+    h3{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: $color-principal;
+        font-size: nth($font-size, 4);
+        .grid-nuestrosClientes{
+            .img-1{
+                grid-column: span 2;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .img-4{
+                img{
+                    grid-row: span 2;
+                }
+            }
+            .img-8{
+                grid-column: span 3;
+            }
+        }
+    }
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: $color-principal;
+        font-size: nth($font-size, 4);
+    }
+}
+
+.fixed{
+    position: fixed;
+    right: 5%;
+    bottom: 15%;
+    width: 100px;
+    height: 100px;
+    background-color: #25D366;
+    text-align: center;
+    @extend %flex;
+    border-radius: 100%;
+    div{
+        a{
+            color: $color-secundario;
+            background-color: #25D366;
+        }
+    }
+}
+
+/*------------Page Productos------------*/
+
+.grid-productos{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+    color: $color-principal;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 100px 100px 50px 100px 100px 50px 100px 100px;
+    grid-template-areas: 
+    "i1 i1 tt1 tt1 tt1"
+    "i1 i1 tx1 tx1 tx1"
+    "i1 i1 tx1 tx1 tx1"
+    "i2 i2 tt2 tt2 tt2"
+    "i2 i2 tx2 tx2 tx2"
+    "i2 i2 tx2 tx2 tx2"
+    "i3 i3 tt3 tt3 tt3"
+    "i3 i3 tx3 tx3 tx3"
+    "i3 i3 tx3 tx3 tx3";
+    gap: 10px;
+    .productoImg1{
+        grid-area: i1;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .productoTitulo1{
+        grid-area: tt1;
+    }
+    .productoTexto1{
+        grid-area: tx1;
+    }
+    .productoImg2{
+        grid-area: i2;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .productoTitulo2{
+        grid-area: tt2;
+    }
+    .productoTexto2{
+        grid-area: tx2;
+    }
+    .productoImg3{
+        grid-area: i3;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .productoTitulo3{
+        grid-area: tt3;
+    }
+    .productoTexto3{
+        grid-area: tx3;
+    }
+
+}
+
+/*------------Page Servicios------------*/
+
+.servicios{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    article{
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        height: 300px;
+        justify-content: space-evenly;
+        align-items: center;
+        h3{
+            font-size: nth($font-size, 3);  
+        }
+        p{
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+
+/*------------Page Acerca de------------*/
+
+.nosotros{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 1000px;
+        height: 300px;
+        h3{
+            font-size: nth($font-size, 4);
+        }
+        p{
+            font-size: nth($font-size, 2);
+            line-height: 30px;
+        }
+    }
+}
+
+/*------------Page Contacto------------*/
+
+.contacto{
+    @extend %flex;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 1000px;
+    height: 300px;    
+    div{
+        h3{
+            font-size: nth($font-size, 4);
+        }
+        p{
+            font-size: nth($font-size, 2);
+            line-height: 20px;
+        }
+    }
+}

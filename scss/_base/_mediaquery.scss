@@ -1,0 +1,100 @@
+/*------------Media Queries------------*/
+
+@media screen and (max-width:900px){
+    .nav2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .grid-nuestrosClientes{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+    }
+    .grid-cliente{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .grid-productos{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px 100px 100px 50px 100px 100px 50px 100px 100px;
+        grid-template-areas: 
+        "i1 tt1 tt1"
+        "i1 tx1 tx1"
+        "i1 tx1 tx1"
+        "i2 tt2 tt2"
+        "i2 tx2 tx2"
+        "i2 tx2 tx2"
+        "i3 tt3 tt3"
+        "i3 tx3 tx3"
+        "i3 tx3 tx3";
+    }
+}
+
+@media screen and (max-width:800px){
+    .nav1{
+        flex-direction: column;
+    }
+    .nav1{
+        h1{
+        font-size: nth($font-size, 8);
+        }
+    }
+    .grid-nuestrosClientes{
+        grid-template-columns: 1fr;
+    }
+    .grid-cliente{
+        grid-column: span 1;
+        grid-row: span 1;    
+    }
+    .grid-productos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 150px 30px auto 150px 30px auto 150px 30px auto;
+        grid-template-areas: 
+        "i1 ."
+        "tt1 tt1"
+        "tx1 tx1"
+        "i2 ."
+        "tt2 ."
+        "tx2 tx2"
+        "i3 ."
+        "tt3 ."
+        "tx3 tx3";
+    }
+    .nosotros{
+        article{
+        width: auto;
+        height: auto;
+        padding: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+    .nav1{
+        h1{
+        font-size: nth($font-size, 7);
+        }
+    }
+    .grid-productos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 150px 30px auto 150px 30px auto 150px 30px auto;
+        grid-template-areas: 
+        "i1 ."
+        "tt1 tt1"
+        "tx1 tx1"
+        "i2 ."
+        "tt2 ."
+        "tx2 tx2"
+        "i3 ."
+        "tt3 ."
+        "tx3 tx3";
+    }
+    .nosotros{
+        article{
+        width: auto;
+        height: auto;
+        padding: 20px;
+        }
+    }
+}
