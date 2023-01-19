@@ -1,8 +1,8 @@
 /*------------Footer------------*/
-
-    pieDePagina{
+footer{
+    .pieDePagina{
         padding: 20px;
-        redesSociales{
+        .redesSociales{
             h3{
                 margin-top: 30px;
                 margin-bottom: 20px;
@@ -29,3 +29,4 @@
             font-size: nth($font-size, 1);
         }    
     }
+}
