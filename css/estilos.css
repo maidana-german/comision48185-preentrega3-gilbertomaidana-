@@ -274,7 +274,10 @@ footer .pieDePagina {
   .grid-productos {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 50px 100px 100px 50px 100px 100px 50px 100px 100px;
-    grid-template-areas: "i1 tt1 tt1" "i1 tx1 tx1" "i1 tx1 tx1" "i2 tt2 tt2" "i2 tx2 tx2" "i2 tx2 tx2" "i3 tt3 tt3" "i3 tx3 tx3" "i3 tx3 tx3"; } }
+    grid-template-areas: "i1 tt1 tt1" "i1 tx1 tx1" "i1 tx1 tx1" "i2 tt2 tt2" "i2 tx2 tx2" "i2 tx2 tx2" "i3 tt3 tt3" "i3 tx3 tx3" "i3 tx3 tx3"; }
+  .contacto {
+    width: auto;
+    height: auto; } }
 
 @media screen and (max-width: 800px) {
   .nav1 {
