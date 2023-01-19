@@ -258,8 +258,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 1000px;
-    height: 300px;    
+    width: auto;
+    height: auto;    
     div{
         h3{
             font-size: nth($font-size, 4);
