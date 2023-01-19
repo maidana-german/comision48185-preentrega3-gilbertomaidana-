@@ -281,9 +281,9 @@ footer .pieDePagina {
     flex-direction: column; }
   .nav1 h1 {
     font-size: 80px; }
-  .grid-nuestrosClientes {
+  .nuestrosClientes .grid-nuestrosClientes {
     grid-template-columns: 1fr; }
-  .grid-cliente {
+  .nuestrosClientes .grid-nuestrosClientes .grid-cliente {
     grid-column: span 1;
     grid-row: span 1; }
   .grid-productos {
