@@ -186,11 +186,11 @@ header {
   padding: 20px; }
   .servicios article {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
     width: 800px;
-    height: 300px;
-    justify-content: space-evenly;
-    align-items: center; }
+    height: 300px; }
     .servicios article h3 {
       font-size: 25px; }
     .servicios article p {
@@ -205,9 +205,9 @@ header {
   margin-bottom: 50px; }
   .nosotros article {
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
     width: 1000px;
     height: 300px; }
     .nosotros article h3 {

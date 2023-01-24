@@ -204,12 +204,9 @@
     justify-content: space-evenly;
     padding: 20px;
     article{
-        display: flex;
-        flex-direction: column;
+        @include flex (flex, space-evenly, center, column);
         width: 800px;
         height: 300px;
-        justify-content: space-evenly;
-        align-items: center;
         h3{
             font-size: nth($font-size, 3);  
         }
@@ -228,10 +225,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
     article{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flex (flex, space-evenly, center, column);
         width: 1000px;
         height: 300px;
         h3{
